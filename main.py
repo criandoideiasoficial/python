@@ -19,4 +19,4 @@ with sync_playwright() as p:
     navegador = p.firefox.launch(headless=False)
     pagina = navegador.new_page()
     pagina.goto("https://pipelinepiscinas.com.br")   
-    time.sleep(35)
+    time.sleep(5)
