@@ -18,5 +18,6 @@ import time
 with sync_playwright() as p:
     navegador = p.firefox.launch(headless=False)
     pagina = navegador.new_page()
-    pagina.goto("https://pipelinepiscinas.com.br")   
-    time.sleep(5)
+    pagina.goto("https://pipelinepiscinas.com.br") 
+    time.sleep(15)
+    pagina = navegador.close()
