@@ -1,0 +1,21 @@
+{
+  "name": "python",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/criandoideiasoficial/python.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/criandoideiasoficial/python/issues"
+  },
+  "homepage": "https://github.com/criandoideiasoficial/python#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.22.2"
+  }
+}
