@@ -1,9 +1,9 @@
 from logging import handlers
 import pandas as pd
-lista_meses = ['janeiro', 'fevereiro']
+#lista_meses = ['janeiro', 'fevereiro']
 
-for mes in lista_meses:
-    print(mes)
+#for mes in lista_meses:
+#    print(mes)
 
 
 #como executar comando em cmd com python
