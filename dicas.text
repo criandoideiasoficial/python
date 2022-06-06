@@ -1,0 +1,19 @@
+pip install pyinstaller // para criar um instalador
+pyinstaller install
+
+agora para gerar o instalador
+pyinstaller -F --onefile nomedoprojeto.py // -F para compilar com os importes -w para um app onde vc pode clicar
+
+ pyinstaller --noconsole --name="Executador de Projetos" --icon="icon.ico" --add-data="icon.ico;." --onefile main.py
+//nessa linha acima remove console de executar, criar noma pasta com nome, adiciona o icon ao projeto
+
+
+
+pyinstaller -F main.py --onedir //desmembra tudo para ficar mais leve o exe para update.
+
+
+
+ pyinstaller --name="Test Pipeline" --icon="icon.ico" --add-data="icon.ico;." --onedir main.py
+
+
+ > pyinstaller --name="Cal Python" --icon="icon.ico" --add-data="icon.ico;." --noconsole --onefile main2.py
