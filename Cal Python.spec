@@ -5,10 +5,10 @@ block_cipher = None
 
 
 a = Analysis(
-    ['main2.py'],
+    ['anydesk.py'],
     pathex=[],
     binaries=[],
-    datas=[('icon.ico', '.')],
+    datas=[('clock.ico', '.')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -41,5 +41,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon='icon.ico',
+    icon='clock.ico',
 )

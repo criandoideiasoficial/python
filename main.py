@@ -1,5 +1,5 @@
 from logging import handlers
-import pandas as pd
+import pandas as pd #ISSO PARA LER VARIAVEIS EM DOCUMENTOS COMO EXCEL WORD PDF
 import time
 lista_meses = ['Teste', 'Estamos testando sistema de email aguarda, o programa fechara automatico se estiver tudo ok.']
 
@@ -19,8 +19,8 @@ from playwright.sync_api import sync_playwright
 
 
 with sync_playwright() as p:
-    navegador = p.chromium.launch(headless=True)
-    pagina = navegador.new_page() 
+    navegador = p.chromium.launch(headless=True) #DECLARANDO PARA ABRIR NAVEGADOR INVISIVEL
+    pagina = navegador.new_page()  #CRINADO A PAGINA
     pagina.set_viewport_size({"width": 640, "height": 600})        
     pagina.goto("https://pipelinepiscinas.com.br/pipe/index.php")  
     time.sleep(8)
@@ -46,7 +46,7 @@ with sync_playwright() as p:
     pagina.fill('xpath=//*[@id="form-field-field_609cea0"]', '1433221709')
     time.sleep(2)
     pagina.locator('xpath=//*[@id="enviar"]').click()
-    time.sleep(10)
+    time.sleep(8)
 
     #pagina = navegador.close()
 
